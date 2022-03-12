@@ -4,7 +4,7 @@
 
 # Moderno. Clean. Fluído.
 
-[![License](https://github.com/Lobones/codebrain-test-frontend)](https://github.com/Lobones/codebrain-test-frontend/blob/master/LICENSE 'License')
+[![License](https://github.com/Lobones/codebrain-test-frontend)](https://github.com/Lobones/codebrain-test-frontend/blob/master/LICENSE "License")
 
 Esse projeto foi feito com o intuito de ser aplicado ao teste proposto para ingressar na empresa CodeBrain.
 
@@ -29,3 +29,9 @@ Esse projeto foi feito com o intuito de ser aplicado ao teste proposto para ingr
 - [x] - Feito em 1 semana utilizando: ReactJS, NextJS, ChakraUI, Java, Spring Boot, MongoDB e Docker.
 
 # Como executar em meu computador?
+
+Para executar uma versão do projeto em seu computador:
+
+O primeiro passo é baixar a imagem do backend e importa-lá em seu Docker.
+
+Após o backend estar funcionando corretamente você pode então entrar na pasta 'frontend' e digitar 'npm i' para instalar os modulos, em seguida utilize o comando 'npm run dev' e, se tudo ocorrer bem, poderá abrir em seu navegador o endereço 'localhost:3000' e lá estará a aplicação totalmente funcional.
