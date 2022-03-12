@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.romulo.codebrainapi.environment.TestEnvironmentGenerator
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in com.romulo.codebrainapi.environment.TestEnvironmentGenerator
+createAndPersist_Product  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.romulo.codebrainapi.services.ProductService.createProduct(com.romulo.codebrainapi.models.Product)" because "this.productService" is null
+	at com.romulo.codebrainapi.environment.TestEnvironmentGenerator.createAndPersist_Product(TestEnvironmentGenerator.java:68)
+
+createAndPersist_Sale  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.romulo.codebrainapi.services.SaleService.createSale(com.romulo.codebrainapi.models.Sale)" because "this.saleService" is null
+	at com.romulo.codebrainapi.environment.TestEnvironmentGenerator.createAndPersist_Sale(TestEnvironmentGenerator.java:89)
+
+createAndPersist_Operator  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.romulo.codebrainapi.services.OperatorService.createOperator(com.romulo.codebrainapi.models.Operator)" because "this.operatorService" is null
+	at com.romulo.codebrainapi.environment.TestEnvironmentGenerator.createAndPersist_Operator(TestEnvironmentGenerator.java:50)
+
