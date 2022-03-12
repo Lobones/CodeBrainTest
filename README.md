@@ -32,6 +32,6 @@ Esse projeto foi feito com o intuito de ser aplicado ao teste proposto para ingr
 
 Para executar uma versão do projeto em seu computador:
 
-O primeiro passo é baixar a imagem do backend e importa-la em seu Docker.
+O primeiro passo é [baixar a imagem do backend e importa-la em seu Docker](https://github.com/Lobones/CodeBrainTest/releases/tag/images).
 
 Após o backend estar funcionando corretamente você pode então entrar na pasta 'frontend' e digitar ```npm i``` para instalar os modulos, em seguida utilize o comando ```npm run dev```  e, se tudo ocorrer bem, poderá abrir em seu navegador o endereço [localhost:3000](http://localhost:3000) e lá estará a aplicação totalmente funcional.
