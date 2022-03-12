@@ -30,8 +30,6 @@ Esse projeto foi feito com o intuito de ser aplicado ao teste proposto para ingr
 
 # Como executar em meu computador?
 
-![](https://github.com/Lobones/codebrain-test-frontend/blob/master/public/images/index-2.png?raw=true)
-
 Para executar uma versão do projeto em seu computador:
 
 O primeiro passo é baixar a imagem do backend e importa-la em seu Docker.
