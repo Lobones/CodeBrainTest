@@ -37,3 +37,29 @@ Após o backend estar funcionando corretamente você pode então entrar na pasta
 Para concluir a configuração do ambiente, você deve acessar em seu navegador [localhost:3000/about](http://localhost:3000/about) e clicar no botão ```Gerar operadores, produtos e vendas``` uma vez. 
 
 Agora, se tudo ocorrer como deveria, você já deve poder acessar a [página principal (localhost:3000)](http://localhost:3000) e explorar a aplicação.
+
+# Endpoints
+
+## ```/api/v1``` é a URL principal onde:
+
+```/operators``` localiza-se os controladores de serviço do modelo Operator tais como:
+* ```/{id}``` recebe o `id` retorna o operador que possui esse `id` caso exista um
+* ```/getAll``` retorna todos os operadores
+* ```/getTopSale/{type}``` retorna o operador com melhor atributo pelo variável {`type`} (BY_AMOUT | BY_EARNINGS)
+* ```/new``` recebe `firstName e lastName`  como parâmetros obrigatórios, podendo também receber `id e sales` como body e retorna o `id` final do novo operador
+* ```/delete/{id}``` recebe o `id` do operador e retorna OK caso bem sucedido ao remover completamente os dados do operador
+
+```/products``` localiza-se os controladores de serviço do modelo Product tais como:
+* ```/{id}``` recebe o `id` retorna o produto que possui esse id caso exista um
+* ```/getAll``` retorna todos os produtos
+* ```/getTopAverageTicket``` retorna o produto com maior ticket médio
+* ```/getLowStock``` retorna os 3 produtos com o menor estoque
+* ```/new``` recebe `title, description, price e stock` como parâmetros obrigatórios, podendo também receber `id e sales` como body e retorna o `id` final do novo produto
+* ```/delete/{id}``` recebe o `id` do produto e retorna OK caso bem sucedido ao remover completamente os dados do produto
+
+```/sales``` localiza-se os controladores de serviço do modelo Sale tais como:
+* ```/{id}``` recebe o `id` retorna a venda que possui esse id caso exista uma
+* ```/getAll``` retorna todas as vendas
+* ```/getTopSaleByPrice``` retorna a venda com o valor mais alto
+* ```/new``` recebe `operatorId, products` como parâmetros obrigatórios, podendo também receber `id` como body e retorna o `id` final da nova venda (o parâmetro products recebe uma lista ```[id do produto]:[quantidade]``` e calcula o preço salvando no modelo na variável `totalPrice`)
+* ```/delete/{id}``` recebe o `id` da venda e retorna OK caso bem sucedido ao remover completamente os dados do venda, inclusive adicionando novamente a quantidade dos produtos utilizadas nessa mesma venda e removendo a venda do operador
