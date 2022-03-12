@@ -30,6 +30,10 @@ Esse projeto foi feito com o intuito de ser aplicado ao teste proposto para ingr
 
 Para executar uma versão do projeto em seu computador:
 
-O primeiro passo é baixar a imagem do backend e importa-la em seu Docker utilizando o [docker-compose.yaml](https://github.com/Lobones/CodeBrainTest/blob/master/docker-compose.yaml)
+Você precisa baixar o arquivo [docker-compose.yaml](https://github.com/Lobones/CodeBrainTest/blob/master/docker-compose.yaml) e executar o comando ```docker compose up``` no mesmo diretório onde está localizado o arquivo.
 
-Após o backend estar funcionando corretamente você pode então entrar na pasta 'frontend' e digitar ```npm i``` para instalar os modulos, em seguida utilize o comando ```npm run dev```  e, se tudo ocorrer bem, poderá abrir em seu navegador o endereço [localhost:3000](http://localhost:3000) e lá estará a aplicação totalmente funcional.
+Após o backend estar funcionando corretamente você pode então entrar na pasta 'frontend' e digitar ```npm i``` para instalar os modulos, em seguida utilize o comando ```npm run dev```.
+
+Para concluir a configuração do ambiente, você deve acessar em seu navegador [localhost:3000/about](http://localhost:3000/about) e clicar no botão ```Gerar operadores, produtos e vendas``` uma vez. 
+
+Agora, se tudo ocorrer como deveria, você já deve poder acessar a [página principal (localhost:3000)](http://localhost:3000) e explorar a aplicação.
