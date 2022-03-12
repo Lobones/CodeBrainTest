@@ -4,8 +4,6 @@
 
 # Moderno. Clean. Fluído.
 
-[![License](https://img.shields.io/github/license/Lobones/CodeBrainTest/frontend/LICENSE)](https://github.com/Lobones/CodeBrainTest/blob/master/frontend/LICENSE "License")
-
 Esse projeto foi feito com o intuito de ser aplicado ao teste proposto para ingressar na empresa CodeBrain.
 
 <img src="https://github.com/Lobones/CodeBrainTest/blob/master/frontend/public/images/new-sale.png?raw=true" alt="NewSale" style="height: 440px; width: 735px;"/>
